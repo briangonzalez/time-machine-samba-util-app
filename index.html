@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <!-- Index Template -->
+    <script type="text/x-handlebars" data-template-name="index">
+      <h2>Time Machine SMB Utility</h2>
+
+      <div class='label'>SMB Location:</div>
+      {{input type="text" value=view.smbLocation placeholder="//192.168.1.1/foo" }}
+
+      <div class='label'>SMB Mount Name (/Volumes/MyMount):</div>
+      {{input type="text" value=view.smbMountName placeholder="MyMount" }}
+
+      <div class='label'>Sparse Image Path:</div>
+      {{input type="text" value=view.sparseimagePath placeholder="Backups/Time-Machine.sparseimage" }}
+
+      <div class='label'>Sparse Image Attach Name (/Volumes/MyAttach):</div>
+      {{input type="text" value=view.sparseimageAttachName placeholder="MyAttach" }}
+
+      <button {{ action "run" target="view" }} >
+        {{ view.buttonText }}
+      </button>
+    </script>
+
+    <!-- JS -->
+    <script src="js/libs/jquery-1.10.2.js"></script>
+    <script src="js/libs/handlebars-1.1.2.js"></script>
+    <script src="js/libs/ember-1.6.1.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
