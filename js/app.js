@@ -6,8 +6,8 @@ var gui   = require('nw.gui');
 var win   = gui.Window.get();
 var path  = require("path");
 
-require('lib/string-proto');
-var tmb   = require("lib/time-machine-smb");
+require('./js/lib/string-proto');
+var tmb   = require("./js/lib/time-machine-smb");
 
 //
 // Setup DB

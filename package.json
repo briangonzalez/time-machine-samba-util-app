@@ -9,12 +9,16 @@
     "toolbar": false,
     "width": 450,
     "height": 550,
+    "max_width": 450,
+    "max_height": 550,
+    "min_width": 450,
+    "min_height": 550,
     "icon": "design/icon.png"
-  },
-  "devDependencies": {
-    "json-store": "0.0.1"
   },
   "dependencies": {
     "jfs": "^0.1.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7"
   }
 }
